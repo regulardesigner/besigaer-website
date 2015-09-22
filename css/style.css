@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding :0;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	color: #3D3D3D;
+}
+
+header{
+	border-top: 2px solid white;
+	height:500px;
+	line-height:500px;
+	background-image:url('../img/bg-header.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	font-size: 0px;
+}
+
+#logo {
+	width:206px;
+	height:82px;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	line-height:normal;
+	background-size: cover;
+	background-image:url('../img/logo-besigaer.png');
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: normal;
+}
