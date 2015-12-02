@@ -9,9 +9,9 @@ html {
 }
 
 header{
+	position: relative;
 	border-top: 2px solid white;
 	height:500px;
-	line-height:500px;
 	background-image:url('../img/bg-header.jpg');
 	background-position: 50% 50%;
 	background-size: cover;
@@ -20,12 +20,13 @@ header{
 }
 
 #logo {
-	width:206px;
+	width:205px;
 	height:82px;
-	vertical-align: middle;
-	display: inline-block;
-	position: relative;
-	line-height:normal;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
 	background-size: cover;
 	background-image:url('../img/logo-besigaer.png');
 }
@@ -34,5 +35,113 @@ h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	line-height: normal;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	color: white;
+	width: 100%;
+	left:50%;
+	top:65%;
+	font-size:20px;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
+#hello {
+	margin:80px 80px 50px 80px;
+}
+
+#hello p {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+
+#portfolio {
+	position: relative;
+}
+
+.project {
+	position: relative;
+	width: 50%;
+	height: 400px;
+	float: left;
+	background-color: rgb(47,160,246);
+	background-size: 110%;
+	background-position: 50%;
+    -web-kit-transition: background-size .25s linear;
+    transition: background-size .25s linear;
+}
+
+.project:hover {
+ 	background-size: 120%
+}
+
+.pernod-ricard {
+	background-image: url('../img/projects/placeholder-project-one.jpg');
+}
+
+.argus {
+	background-image: url('../img/projects/placeholder-project-two.jpg');
+}
+
+.peroni-style {
+	background-image: url('../img/projects/placeholder-project-one.jpg');
+}
+
+.peuplade {
+	background-image: url('../img/projects/placeholder-project-two.jpg');
+}
+
+.project .cartel {
+	height: 100%;
+	width: 100%;
+	color: white;
+	position: relative;
+	opacity: 0;
+	-webkit-opacity: 0;
+}
+
+.cartel-text {
+	position: absolute;
+	font-weight: 100;
+	text-align: center;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
+.cartel:hover {
+	background-color: rgba(47,160,246,0.8)
+}
+
+.center {
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	color: rgb(47,160,246);
+	text-decoration: none;
+	font-style: normal;
+	padding:10px 20px 12px 20px;
+	background-color: white;
+	border: 1px solid rgb(47,160,246);
+}
+
+.cartel h2 {
+	text-transform: uppercase;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	background-color: whites;
+	height: 70px;
+	font-size: 14px;
+	color: white;
+	padding-top: 45px;
+	color: #999999;
 }
